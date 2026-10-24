@@ -1,0 +1,21 @@
+{
+  "name": "backend-mastery",
+  "version": "1.0.0",
+  "description": "Completed Backend Journey Basic to Mastery",
+  "keywords": [
+    "javascript",
+    "react.js",
+    "tailwindcss"
+  ],
+  "license": "ISC",
+  "author": "Rohit Kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.10"
+  }
+}
