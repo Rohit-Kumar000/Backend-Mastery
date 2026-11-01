@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import { Router } from "express";
 import {
     deleteVideo,
     getAllVideos,
@@ -6,9 +6,9 @@ import {
     publishAVideo,
     togglePublishStatus,
     updateVideo,
-} from "../controllers/video.controllers.js"
-import {verifyJWT} from "../middlewares/auth.middlewares.js"
-import {upload} from "../middlewares/multer.middlewares.js"
+} from "../controllers/video.controllers.js";
+import { verifyJWT } from "../middlewares/auth.middlewares.js";
+import { upload } from "../middlewares/multer.middlewares.js";
 
 const router = Router();
 router.use(verifyJWT);
@@ -26,7 +26,6 @@ router
                 name: "thumbnail",
                 maxCount: 1,
             },
-            
         ]),
         publishAVideo
     );
@@ -39,4 +38,4 @@ router
 
 router.route("/toggle/publish/:videoId").patch(togglePublishStatus);
 
-export default router
+export default router;
